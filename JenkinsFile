@@ -1,0 +1,23 @@
+#!/usr/bin/env groovy
+
+pipeline {
+  agent none
+ 
+  stages {
+    stage('Checkout') {
+      echo "Checkout"
+    }
+
+    stage('Build') {
+      echo "Build"
+    }
+
+    stage('Code Analysis') {
+      echo "Code Analysis"
+    }
+
+    stage('Release') {
+      echo "Release"
+    }
+  } 
+}
